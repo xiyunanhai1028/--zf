@@ -19,7 +19,9 @@ let handler = {
         console.log('updata', key)
             //为数组是会触发两次更新，一次为下标，一次为数据
         if (key == 'length') return true
-        return Reflect.set(target, key, value)
+        return Reflect.set(target, key, value)//=>必须返回，作为一个表示
+        // target[key]=value
+        // return true //=>必须返回，作为一个表示
     }
 }
 
