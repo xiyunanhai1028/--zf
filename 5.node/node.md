@@ -26,3 +26,30 @@
 + 被调用者来决定同步和异步
 + 调用者的状态  阻塞和非阻塞
 
+### 5.    scripts脚本配置
+
+可以帮助执行node_modules下.bin目录的文件
+
+```javascript
+"scripts":{
+    "mime":"mime",
+    "test" :"echo \"Error:no test specified\" && exit 1"   
+}
+
+//在命令下执行
+npm run mime
+```
+
+### 6.	npx的使用
+
++ 可以直接执行.bin目录下的文件
++ 可以安装模块，使用后悔自动删除
+
+### 7.    npm发布模块
+
+```javascript
+nrm use npm 
+npm addUser
+npm publish
+```
+
